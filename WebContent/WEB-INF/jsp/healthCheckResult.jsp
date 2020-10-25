@@ -11,12 +11,12 @@
 <body>
 <h1>スッキリ健康診断</h1>
 <p>
-    身長:<%= health.getHeight() %>><br>
-    体重:<%= health.getWeight() %>><br>
-    BMI:<%= health.getBmi() %>><br>
+    身長:<%= health.getHeight() %><br>
+    体重:<%= health.getWeight() %><br>
+    BMI:<%= health.getBmi() %><br>
     体型:<%= health.getBodyType() %>
 </p>
-<a href="/RequestScope-sample7/HelthCheck">戻る</a>
+<a href="/RequestScope-sample7/HealthCheck">戻る</a>
 
 </body>
 </html>

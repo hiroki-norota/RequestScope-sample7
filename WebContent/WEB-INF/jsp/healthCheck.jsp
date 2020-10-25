@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>スッキリ健康診断</h1>
-<form action="text" name="height" method="post">
+<form action="/RequestScope-sample7/HealthCheck" method="post">
     身長:<input type="text" name="height">(cm)<br>
     体重:<input type="text" name="weight">(kg)<br>
     <input type="submit" value="診断">

@@ -16,5 +16,6 @@ public class HealthCheckLogic {
 		} else {
 			bodyType = "肥満";
 		}
+		health.setBodyType(bodyType);
 	}
 }
