@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import model.Health;
+import model.HealthCheckLogic;
+
 /**
  * Servlet implementation class HealthCheck
  */
@@ -42,9 +45,9 @@ public class HealthCheck extends HttpServlet {
 		HealthCheckLogic healthCheckLogic = new HealthCheckLogic();
 		healthCheckLogic.execute(health);
 
-		request.setAttribute("health".concat(health));
+		request.setAttribute("health", health);
 
-		RequestDispatcher dispathcher = request.getRequestDispatcher("/WEB-INF/jsp/healthCheckResult.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/healthCheckResult.jsp");
 		dispatcher.forward(request, response);
 	}
 
